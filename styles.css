@@ -1,0 +1,152 @@
+/* Vamos a definir el estilo de la página */
+
+
+/* Definimos el fondo de la página */
+body {
+	font-family: 'Ubuntu', sans-serif; /* fuente de texto */
+	text-align: center; /* centrar el texto */
+	background-color: #a8d3fa; /* color de fondo */
+	
+}
+/* Definimos el estilo de la cabecera h1*/
+
+h1 {
+	color: #0a1778;
+	font-size: 2.5rem; /* tamaño de fuente grande */
+	margin-top: 20px;  /* margen superior */
+}
+
+/* Definimos el estilo de los párrafos */
+.principal_p {
+	color: #0a1778;
+	font-size: 1.5rem; /* tamaño de fuente grande */
+	margin-top: 20px;  /* margen superior */
+}
+
+span {
+	color: #0a1778;
+	font-weight: bold; /* negrita */
+}
+
+#restart-btn{
+	background-color: #0a1778;
+	color: white;
+	font-size: 1.5rem; /* tamaño de fuente grande */
+	padding: 10px 20px; /* relleno de 10px arriba y abajo y 20px a los lados */
+	border: 2px solid white; 
+	border-radius: 5px; /* borde redondeado */
+	margin-top: 20px;  /* margen superior */
+	cursor: pointer; /* cursor de la mano */
+}
+
+#grid-container {
+
+	width: 400px;
+	height: 400px;
+
+	background-color: #0a1778;
+	border: 6px solid #0a1778; /* borde de 2px */
+	border-radius: 10px; /* borde redondeado */	
+
+	margin: 0 auto;
+	display: flex; /* establecer la visualización de los elementos */
+	flex-wrap: wrap; /* envolver los elementos */
+}
+
+.tile {
+	width: 90px;
+	height: 90px;
+	
+	border: 5px solid #0a1778; /* borde de 1px */
+	border-radius: 30px; /* borde redondeado */
+	background-color: #80acd3;
+	
+	display: flex; /* establecer la visualización de los elementos */
+	align-items: center; /* centrar verticalmente */
+	justify-content: center; /* centrar horizontalmente */
+	font-size: 3rem; /* tamaño de fuente grande */
+}
+
+.x2 {
+	background-color: #8fa0f8;
+	color: #0a1778
+}
+
+.x4 {
+	background-color: #7181f9;
+	color: #0a1778;
+}
+
+.x8 {
+	background-color: #4b5df8;
+	color: #0a1778;
+}
+
+.x16 {
+	background-color: #3996f9;
+	color: #0a1778;
+}
+
+.x32 {
+	background-color: #4bbcf4;
+	color: #0a1778;
+}
+
+.x64 {
+	background-color: #45e2f0;
+	color: #0a1778;
+}
+
+.x128 {
+	background-color: #4bf0a3;
+	color: #0a1778;
+}
+
+.x256 {
+	background-color: #48f848;
+	color: #0a1778;
+}
+
+.x512 {
+	background-color: #78fd48;
+	color: #0a1778;
+}
+
+.x1024 {
+	background-color: #a0f848;
+	color: #0a1778;
+}
+
+.x2048 {
+	background-color: #ffec43;
+	color: #0a1778;
+}
+
+.rules {
+	border: 2px solid white; /* borde de 2px */
+	padding: 20px; /* relleno de 20px */
+}
+
+.rules-tittle {
+	color: #0a1778;
+	font-size: 1.5rem; /* tamaño de fuente grande */
+	margin-top: 20px;  /* margen superior */
+	text-align: center; /* centrar el texto */
+}
+
+@keyframes tileAppear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.tile {
+    transition: transform 0.2s ease-in-out;
+}
+
+.tile.new-tile {
+    animation: tileAppear 0.2s ease-in-out;
+}
